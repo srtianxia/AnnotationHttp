@@ -1,7 +1,7 @@
 package com.srtianxia;
 
 /**
- * Created by lizhaoxuan on 16/5/27.
+ * Created by srtianxia on 2016/10/4.
  */
 public class MethodInfo {
     private String mUrl;
