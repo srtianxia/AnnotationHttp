@@ -1,10 +1,8 @@
 package com.srtianxia;
 
 import java.io.Writer;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
@@ -16,22 +14,17 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ExecutableElement;
-import javax.lang.model.element.PackageElement;
 import javax.lang.model.element.TypeElement;
-import javax.lang.model.util.Elements;
-import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
 public class HttpProcessor extends AbstractProcessor {
-    private Elements mElementUtils;
     private Filer mFiler;
     private Messager mMessager;
 
 
     @Override public synchronized void init(ProcessingEnvironment processingEnvironment) {
         super.init(processingEnvironment);
-        mElementUtils = processingEnvironment.getElementUtils();
         mFiler = processingEnvironment.getFiler();
         mMessager = processingEnvironment.getMessager();
     }
