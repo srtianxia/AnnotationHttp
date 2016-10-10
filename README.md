@@ -1,7 +1,7 @@
 # AnnotationHttp
 compile time http request library
 
-编译时注解的网络请求库，现在只完成了雏形，仅供学习，因为最近看了`okhttp`的源码，所以请求是仿照`okhttp`的**责任链模式**封装的`HttpURLConnection`，负责缓存的链节暂时是一个空实现直接向下传递。至于编译时注解可以看[这篇文章](http://srtianxia.github.io/2016/10/02/%E6%B3%A8%E8%A7%A3/)
+编译时注解的网络请求库，现在只完成了雏形，仅供学习，因为最近看了`okhttp`的源码，所以请求是仿照`okhttp`的**责任链模式**封装的`HttpURLConnection`，负责缓存的链节暂时是一个空实现直接向下传递。至于编译时注解可以看[这篇文章](https://srtianxia.github.io/2016/10/02/%E6%B3%A8%E8%A7%A3/)
 
 
 ## 使用方式
